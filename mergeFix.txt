@@ -11,7 +11,21 @@
 /* Re-design and related assets by /u/0megaRidley */
 /* https://redd.it/3rtuqw */
 /* Redesign coding by /u/Szkieletor */
-	
+
+/*Stylesheet tweaks*/
+.stylesheet-customize-container { width: 100%; }
+
+#subreddit_stylesheet { display: block; overflow: hidden; }
+.sheets { margin: 0;}
+
+#stylesheet_contents {
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: white;
+  color: #042eae;
+  height: 500px;
+}
+
 /*subreddit Header field begin*/
 #header-bottom-left {
   background-image: url(%%topbar1%%);
@@ -21,7 +35,7 @@
 }
 
 #header {
-  background-image: url(%%banner-placeholder%%);
+  background-image: url(%%banner%%);
   border: none;
 }
 
@@ -130,62 +144,73 @@ body .content {
 }
 
 #header .tabmenu [href$="/"] {
-  background-image: url(%%Bar1-hot%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: 0 -39px;
   width: 114px;
 }
 
 #header .tabmenu [href$="/new/"] {
-  background-image: url(%%bar2-new%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -114px -39px;
   width: 69px;
 }
 
 
 #header .tabmenu [href$="/rising/"] {
-  background-image: url(%%bar3-rise%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -183px -39px;
   width: 89px;
 }
 
 
 #header .tabmenu [href$="/controversial/"] {
-  background-image: url(%%bar4-contro%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: 0 -72px;
   width: 147px;
 }
 
 
 #header .tabmenu [href$="/top/"] {
-  background-image: url(%%bar5-top%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -147px -72px;
   width: 69px;
 }
 
 
 #header .tabmenu [href$="/gilded/"] {
-  background-image: url(%%bar6-gilded%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: 0 -105px;
   width: 88px;
 }
 
 
 #header .tabmenu [href$="/wiki/"] {
-  background-image: url(%%bar7-wiki%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -88px -105px;
   width: 76px;
 }
 
 #header .tabmenu [href$="/ads/"] {
-  background-image: url(%%bar8-promoted%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -164px -105px;
   width: 114px;
 }
 
 #header .tabmenu [href$="#"] {
-  background-image: url(%%bar9-view%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: 0 -138px;
   width: 140px;
 }
 
 #header .tabmenu [href*="/related/"] {
-  background-image: url(%%bar10-relevant%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -140px -138px;
   width: 111px;
 }
 
 #header .tabmenu [href*="/comments/"] {
-  background-image: url(%%Bar1-hot%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: 0 -39px;
   width: 111px;
 }
 
@@ -252,7 +277,7 @@ body .content {
   height:39px;
   margin-top:-5px;
   margin-left:-10px;
-  background-image: url(%%submit-sprites%%);
+  background-image: url(%%submitboxes-v02%%);
   background-repeat: no-repeat;
 }
 
@@ -297,12 +322,14 @@ body.res-nightmode .submit .morelink a:before{margin-left:0px;}
   width: 310px;
 }
 
+/* made problems on smaller displays
 #search {
     position: absolute;
     z-index: 999;
-    top: 140px; /* distance from top */
-    right: 25px; /* distance from right */
+    top: 140px;
+    right: 25px;
 }
+*/
 
 .side .spacer form input:first-child {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -313,7 +340,7 @@ body.res-nightmode .submit .morelink a:before{margin-left:0px;}
 /*sidebar image*/
 .side .titlebox h1 a, .side .titlebox h1 a:link .side .titlebox h1 a:visited {
   color: transparent;
-  background: url(%%fallout-logo%%) no-repeat;
+  background: url(%%titlecard-v04%%) no-repeat;
   height: 144px;
   width: 300px;
   display: block;
@@ -368,7 +395,8 @@ div.titlebox .users-online span.number:after {content: " fighting the good fight
 }
 .side hr:before {
   content: "";
-  background-image: url(%%separation-bar%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: 0 0;
   height: 39px;
   width: 296px;
   display: block;
@@ -382,25 +410,25 @@ div.titlebox .users-online span.number:after {content: " fighting the good fight
 /*************************/
 /* Upvotes and Downvotes */
 .arrow.up {
-  background-image: url(%%upvote%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -216px -72px;
   opacity: 0.5;
-  background-position: 0px 0px;
   height: 9px; width: 16px;
 }
 .arrow.upmod {
-  background-image: url(%%upvote%%);
-  background-position: 0px 0px;
+  background-image: url(%%omega-sprites%%);
+  background-position: -216px -72px;
   height: 9px; width: 16px;
 }
 .arrow.down {
-  background-image: url(%%downvote%%);
+  background-image: url(%%omega-sprites%%);
+  background-position: -216px -81px;
   opacity: 0.5;
-  background-position: 0px 0px;
   height: 9px; width: 16px;
 }
 .arrow.downmod {
-  background-image: url(%%downvote%%);
-  background-position: 0px 0px;
+  background-image: url(%%omega-sprites%%);
+  background-position: -216px -81px;
   height: 9px; width: 16px;
 }
 /* End of upvotes and downvotes */
@@ -1176,7 +1204,7 @@ a[href="/s"]:hover::after { color: black }
 	}
 
 	.flair{
-		border: none; background: url(%%flair-v04%%) no-repeat;
+		/*border: none; background: url(%%flair-v04%%) no-repeat;*/
 		padding: 0px; color:transparent; background-color:transparent;
 		border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
 		top: 20px; display: inline-block; line-height: 30px; overflow: hidden;
@@ -1253,14 +1281,14 @@ a[href="/s"]:hover::after { color: black }
     .flair-cfcomicalt:hover{ background-position: -588px -580px; height: 40px; min-width: 40px; text-indent: 41px;line-height:40px;}
 
     .flair-cfovermare{
-        background: url(%%cf-overmarev01%%);
+        /*background: url(%%cf-overmarev01%%);*/
         background-repeat:no-repeat;
         background-position: 0 -50px;
         height:20px;
         width:20px;
     }
     .flair-cfovermare:hover{
-        background: url(%%cf-overmarev01%%);
+        /*background: url(%%cf-overmarev01%%);*/
         background-repeat:no-repeat;
         height: 40px;
         background-position: 0 0;
