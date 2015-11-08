@@ -1,0 +1,336 @@
+/* Style design and assets by /u/0megaRidley */
+/* https://redd.it/3rtuqw */
+/* Design coding by /u/Szkieletor */
+
+/* Stylesheet tweaks */
+/* TEMPORARY STUFF I'm not actually keeping it in final version it's just to make my work more comfortable */
+.stylesheet-customize-container { width: 100%; }
+
+#subreddit_stylesheet { display: block; overflow: hidden; }
+.sheets { margin: 0;}
+
+#stylesheet_contents {
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: white;
+  color: #042eae;
+  height: 500px;
+}
+
+/***************/
+/* Header Area */
+#header-bottom-left {
+  background-image: url(%%topbar1%%);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  margin-top: 30px;
+}
+
+#header {
+  background-image: url(%%banner-placeholder%%);
+  border: none;
+}
+
+/* header img position adjustment */
+#header-img {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+/* subreddit name to image, /r/elitetorval version */
+.pagename a {
+  background-image: url(%%logo%%);
+  position: absolute;
+  left: 120px;
+  bottom: -8px;
+  text-indent: -9999em;
+  text-align: center;
+  width: 299px;
+  height: 69px;
+}
+
+#header #sr-header-area {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+/* RES */
+#RESShortcutsEditContainer div, #RESShortcutsEditContainer {
+  background: transparent!important;
+}
+
+#sr-header-area div#RESShortcutsViewport div#RESShortcuts.sr-bar a.subbarlink.RESShortcutsCurrentSub {
+  color: #47C838!important; /* ye seriously a selector this long is required for this to work */
+}
+
+#header #sr-header-area:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transition: 0.3s background-color;
+}
+
+.sr-bar a {
+  color: rgba(200, 200, 200, 0.7);
+}
+
+.sr-bar, .sr-bar a:hover{
+  color: rgba(200, 200, 200, 1);
+}
+
+body .content {
+  margin-top: 20px;
+}
+
+/* rounded corner */
+#header:before {
+  content: "";
+  background-image: url(%%topbarright%%);
+  height: 72px;
+  width: 365px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+/* userbar */
+#header-bottom-right {
+  top: 88px!important;
+  bottom: 52px!important;
+  opacity: 0.3;
+  background-color: #000;
+}
+
+#header-bottom-right a {
+  color: #ccc;
+}
+
+#header-bottom-right:hover {
+  opacity: 1;
+  transition: 0.3s opacity;
+}
+
+#userbarToggle {
+  background-color: rgba(0, 0, 0, 1)!important;
+  border-color: #ccc!important;
+}
+
+/******************************************/
+/* tabmenu positioning and text to images */
+.tabmenu {
+  position: absolute;
+  bottom: 12px;
+  left: 419px;
+}
+
+/* common properties for all tabmenu elements, removal of borders, colored background, text, and setting height */
+#header .tabmenu li a {
+  display: inline-block;
+  height: 33px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-indent: -9999em;
+}
+
+#header .tabmenu [href$="/"] {
+  background-image: url(%%Bar1-hot%%);
+  width: 114px;
+}
+
+#header .tabmenu [href$="/new/"] {
+  background-image: url(%%bar2-new%%);
+  width: 69px;
+}
+
+
+#header .tabmenu [href$="/rising/"] {
+  background-image: url(%%bar3-rise%%);
+  width: 89px;
+}
+
+
+#header .tabmenu [href$="/controversial/"] {
+  background-image: url(%%bar4-contro%%);
+  width: 147px;
+}
+
+
+#header .tabmenu [href$="/top/"] {
+  background-image: url(%%bar5-top%%);
+  width: 69px;
+}
+
+
+#header .tabmenu [href$="/gilded/"] {
+  background-image: url(%%bar6-gilded%%);
+  width: 88px;
+}
+
+
+#header .tabmenu [href$="/wiki/"] {
+  background-image: url(%%bar7-wiki%%);
+  width: 76px;
+}
+
+#header .tabmenu [href$="/ads/"] {
+  background-image: url(%%bar8-promoted%%);
+  width: 114px;
+}
+
+#header .tabmenu [href$="#"] {
+  background-image: url(%%bar9-view%%);
+  width: 140px;
+}
+
+#header .tabmenu [href*="/related/"] {
+  background-image: url(%%bar10-relevant%%);
+  width: 111px;
+}
+
+#header .tabmenu [href*="/comments/"] {
+  background-image: url(%%Bar1-hot%%);
+  width: 111px;
+}
+
+/***********************************/
+/* sidebar stuff beyond this point */
+.side {
+  background-image: url(%%border%%);
+  margin: 10px 0 0 0;
+  padding: 0 15px 0 25px;
+  width: 310px;
+}
+
+#search {
+    position: absolute;
+    z-index: 999;
+    top: 140px; /* distance from top */
+    right: 25px; /* distance from right */
+}
+
+.side .spacer form input:first-child {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+/*sidebar image*/
+.side .titlebox h1 a, .side .titlebox h1 a:link .side .titlebox h1 a:visited {
+  color: transparent;
+  background: url(%%fallout-logo%%) no-repeat;
+  height: 144px;
+  width: 300px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.res-nightmode .titlebox span.word, .titlebox span.word {display: none;}
+
+
+/*displayed users*/
+div.titlebox .subscribers span.number:after {content: " wasteland fillies"!important; font-style: bold!important;}
+div.titlebox .users-online span.number:after {content: " fighting the good fight"!important;}
+
+/* background removal */
+.side .spacer .titlebox form, .side .spacer .titlebox .leavemoderator, .icon-menu a {
+  background: none;
+}
+
+/* sidebar text color adjustment */
+.side .md, .side, .spacer .leavemoderator, .spacer .option, .spacer .flairtoggle label, .spacer .sidecontentbox .title h1 {
+  color: #ccc;
+}
+
+.linkinfo {
+  color: #2b2b2b;
+  background-image: url(%%backgroundtexture%%);
+  border: none;
+}
+
+/* link color adjustment */
+.side a {
+  color: #87A7DA; /* high contrast on dark background, while still being distinctively blue. Subject to change */
+}
+
+/* mod tools background + RES active background */
+.spacer .content, .RES-keyNav-activeElement {
+  background-image: url(%%backgroundtexture%%);
+}
+
+.spacer .content a {
+  color: #2b2b2b; /* links are light color, so this reverts them to a dark one so they contrast on our background texture */
+}
+
+.sidebox.create .morelink{display: none;} /*removes "create your own subreddit" link*/ 
+.sidebox .spacer{display: none !important;} /*removes the second "create your own subreddit" link*/
+
+/*Submission box field begin*/
+.morelink .nub {display:none!important;}
+.morelink{width:250px;}
+.morelink a{ 
+  content:"";
+  float:left;
+  width:310px;
+  height:39px;
+  margin-top:-5px;
+  margin-left:-10px;
+  background-image: url(%%submit-sprites%%);
+  background-repeat: no-repeat;
+}
+
+.submit-link .morelink a{
+  color:transparent;
+  background-position: 0 0;
+}
+.submit-link .morelink a:hover{background-position: 0 0px;}
+.submit-link .morelink a:active{background-position: 0 -50px;}
+.submit-text .morelink a{
+  color:transparent;
+  background-position: 0 -100px;
+}
+.submit-text .morelink a:hover{background-position: 0 -100px;}
+.submit-text .morelink a:active{background-position: 0 -150px;}
+
+/*Submission box field end*/
+
+/* Sidebar horizontal rule (***) */
+.side hr {
+  height: 39px;
+  background-color: transparent;
+}
+.side hr:before {
+  content: "";
+  background-image: url(%%separation-bar%%);
+  height: 39px;
+  width: 296px;
+  display: block;
+}
+
+/*************************/
+/* Upvotes and Downvotes */
+.arrow.up {
+  background-image: url(%%upvote%%);
+  opacity: 0.5;
+  background-position: 0px 0px;
+  height: 9px; width: 16px;
+}
+.arrow.upmod {
+  background-image: url(%%upvote%%);
+  background-position: 0px 0px;
+  height: 9px; width: 16px;
+}
+.arrow.down {
+  background-image: url(%%downvote%%);
+  opacity: 0.5;
+  background-position: 0px 0px;
+  height: 9px; width: 16px;
+}
+.arrow.downmod {
+  background-image: url(%%downvote%%);
+  background-position: 0px 0px;
+  height: 9px; width: 16px;
+}
