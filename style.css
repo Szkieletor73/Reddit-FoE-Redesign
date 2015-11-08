@@ -1,21 +1,16 @@
-/* Style design and assets by /u/0megaRidley */
+/*Place announcements here, uncomment and put announcement into the content field*/
+/* Recomment code to hide announcement box*/
+    /*.pagename a:before{
+        content:"Hello World this is located in the CSS.";
+	    font-variant:normal!important;
+    	background-image: url(%%AutoModFlair%%)!important;
+        background:black;
+        
+    }*/
+
+/* Re-design and related assets by /u/0megaRidley */
 /* https://redd.it/3rtuqw */
-/* Design coding by /u/Szkieletor */
-
-/* Stylesheet tweaks */
-/* TEMPORARY STUFF I'm not actually keeping it in final version it's just to make my work more comfortable */
-.stylesheet-customize-container { width: 100%; }
-
-#subreddit_stylesheet { display: block; overflow: hidden; }
-.sheets { margin: 0;}
-
-#stylesheet_contents {
-  padding-left: 5px;
-  padding-top: 5px;
-  background-color: white;
-  color: #042eae;
-  height: 500px;
-}
+/* Redesign coding by /u/Szkieletor */
 
 /***************/
 /* Header Area */
