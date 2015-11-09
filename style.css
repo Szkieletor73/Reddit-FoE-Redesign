@@ -1504,7 +1504,7 @@ a[href="/s"]:hover::after { color: black }
 	}
 
 	.flair{
-		/*border: none; background: url(%%flair-v04%%) no-repeat;*/
+		border: none; background: url(%%flair-v04%%) no-repeat;
 		padding: 0px; color:transparent; background-color:transparent;
 		border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;
 		top: 20px; display: inline-block; line-height: 30px; overflow: hidden;
@@ -1581,14 +1581,14 @@ a[href="/s"]:hover::after { color: black }
     .flair-cfcomicalt:hover{ background-position: -588px -580px; height: 40px; min-width: 40px; text-indent: 41px;line-height:40px;}
 
     .flair-cfovermare{
-        /*background: url(%%cf-overmarev01%%);*/
+        background: url(%%cf-overmarev01%%);
         background-repeat:no-repeat;
         background-position: 0 -50px;
         height:20px;
         width:20px;
     }
     .flair-cfovermare:hover{
-        /*background: url(%%cf-overmarev01%%);*/
+        background: url(%%cf-overmarev01%%);
         background-repeat:no-repeat;
         height: 40px;
         background-position: 0 0;
